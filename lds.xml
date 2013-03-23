@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" client="site" method="upgrade">
+	<name>LDS Komponente</name>
+	<author>A.Ruttkamp/P.Santos/R.Drexler</author>
+	<creationDate>08.12.2012</creationDate>
+	<copyright>Copyright © 2012, LDS GmbH, All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@lds.de</authorEmail>
+	<authorUrl>http://www.lds.de</authorUrl>
+	<version>2.5.0</version>
+	<description>LDS Komponente zur Abwicklung von Programmieraufträgen</description>
+    <site>
+        <files folder="site">
+            <filename component="com_lds">lds.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>views</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>controllers</folder>
+            <folder>language</folder>
+        </files>
+        <languages folder="site">
+            <language tag="de-DE">language/de-DE/de-DE.com_lds.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_lds.ini</language>
+        </languages>
+    </site>
+    <administration>
+        <!-- Einträge im Admin-Menü -->
+        <menu img="class:component">LDS Orders</menu>
+        <files folder="admin">
+        <folder>sql</folder>
+        <folder>views</folder>
+        <folder>assets</folder>
+        <folder>helpers</folder>
+        <folder>controllers</folder>
+        <folder>tables</folder>
+        <folder>language</folder>
+	    </files>
+        <languages folder="admin">
+            <language tag="de-DE">language/de-DE/de-DE.com_lds.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_lds.ini</language>
+        </languages>
+	</administration>
+    <install>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/install.mysql.utf8.sql</file>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+</extension>

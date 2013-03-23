@@ -1,0 +1,50 @@
+/**
+ * @name        CSS for lds_orders
+ * @package		Frontend
+ * @subpackage  com_lds
+ * @author      P.Santos | A.Ruttkamp | R.Drexler
+ * @email:	    info@lds.de
+ * @website:	http://www.lds.de
+ * @version:	2.5.0
+ * @date:		08.12.2012
+ * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* == Tags == */
+:hover{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+table{width: 100%;}
+#lds_orders th, #lds_order th{
+     padding: 2px;
+     border: 1px solid #3a3a3a;
+     background: #a7a7a7;
+}
+#lds_orders td{
+    text-align: center;
+    padding: 2px;
+}
+#lds_order th{
+    width: 35%;
+}
+#lds_order td{
+    padding: 2px;
+}
+img{
+    padding: 2px;
+}
+/* == END == */
+/* == Classes == */
+.lds_num{width: 75px;}
+.lds_typ{width: 20px;}
+.lds_center{text-align: center;}
+.lds_left{text-align: left;}
+.lds_small{font-size: 85%;}
+.lds_fright{float:right;width: 50%;}
+.lds_fleft{float:left;width: 50%;}
+.lds_icon{width: 25px;}
+.lds_clear{clear: both;}
+/* == END == */
